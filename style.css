@@ -1,5 +1,40 @@
-.signupbody{
+
+.signupbody, .loginbody{
     background-image: linear-gradient(to bottom right, #00F490, #00BBC9);
+    background-repeat: no-repeat;
+    background-size:cover; 
+    padding:60px;
+    
     /* color: rgb(216, 17, 17); */
     
 }
+.forgot a {
+    color: #777777;
+    font-size: 14px;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+ .form-control {
+    background: #f7f7f7;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    
+  } 
+  .loginbody .form-group{
+      margin: 30px 0 30px 0;
+  }
+  .loginbody .card {
+      max-width: 90%;
+      margin-left: 50px;
+      margin-right: 50px;
+     
+  }
+   .card-body{
+      padding: 40px 60px;
+      
+  }
