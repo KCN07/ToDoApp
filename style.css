@@ -1,13 +1,15 @@
 
-.signupbody, .loginbody{
+.signupbody, .loginbody, .createbody{
     background-image: linear-gradient(to bottom right, #00F490, #00BBC9);
     background-repeat: no-repeat;
     background-size:cover; 
-    padding:60px;
+    padding-bottom:30px;
+    
     
     /* color: rgb(216, 17, 17); */
     
 }
+
 .forgot a {
     color: #777777;
     font-size: 14px;
@@ -38,3 +40,6 @@
       padding: 40px 60px;
       
   }
+  h1 {
+    font-family: 'Abril Fatface', cursive;
+}
