@@ -1,14 +1,19 @@
 
-.signupbody, .loginbody, .createbody{
+.signupbody, .loginbody, .createbody, .editbody{
     background-image: linear-gradient(to bottom right, #00F490, #00BBC9);
     background-repeat: no-repeat;
-    background-size:cover; 
-    padding-bottom:30px;
+    background-size:cover;
+    padding-top: 10px; 
+    padding-bottom:40px;
     
     
  
     
 }
+.createbody, .editbody{
+    padding: 0;
+}
+
 
 .forgot a {
     color: #777777;
