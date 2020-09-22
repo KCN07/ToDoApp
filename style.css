@@ -1,11 +1,17 @@
-
+html{
+    /* background-image: url(images/bgimg.jpg); */
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+   background-repeat: no-repeat;
+   background-size:cover;
+}
 .signupbody, .loginbody, .createbody, .editbody{
-    background-image: linear-gradient(to bottom right, #00F490, #00BBC9);
+
     background-repeat: no-repeat;
     background-size:cover;
     padding-top: 10px; 
     padding-bottom:40px;
-    
+    max-width: auto;
     
  
     
@@ -14,6 +20,11 @@
     padding: 0;
 }
 
+.card{
+    min-width: 1000px;
+    
+}
+  
 
 .forgot a {
     color: #777777;
@@ -47,4 +58,27 @@
   }
   h1 {
     font-family: 'Abril Fatface', cursive;
+}
+
+.panel{
+    margin-bottom: 20px;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+small{
+    font-weight: 400;
+    font-size: medium;
+    line-height: 1;
+    color: #777;
 }
