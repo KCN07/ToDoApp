@@ -17,6 +17,7 @@ body{
 li.ui-state-default{
     background:#fff;
     border:none;
+    /* border-top: honeydew; */
     border-bottom:1px solid #ddd;
 }
 
