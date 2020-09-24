@@ -4,19 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyTODOapp</title>
+  <title>AllTodos</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-
+  <link rel="stylesheet" href="stltodo.css">
 </head>
 
 <body>
+
   <div class="container-fluid p-0">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5 ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
       <a class="navbar-brand" href="home.html">My ToDolist</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,9 +59,87 @@
     </nav>
 
   </div>
+  <header class="jumbotron  container-fluid " style="background-color: gray;">
+    <h1 align="center" style="color: cyan; ">All Todos</h1>
+  </header>
+  <div class="container pb-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="todolist not-done">
+          <h1>Todos</h1>
+
+          <ul id="sortable" class="list-unstyled">
+            <li class="ui-state-default">
+              <div class="row">
+                <div class="checkbox col-sm-9 " style="text-align: left;">
+                  <label>
+                    <input type="checkbox" value="" />Swe Class</label>
+                </div>
+                <div class="col-sm-3">
+                  <h4 style="float: right;">
+                    <small><em>2020-09-25 </em></small>
+                    <small><em>1.00pm </em></small>
+                  </h4>
+                </div>
+              </div>
+            </li>
+
+            <li class="ui-state-default">
+              <div class="row">
+                <div class="checkbox col-sm-9 " style="text-align: left;">
+                  <label>
+                    <input type="checkbox" value="" />Call Golapi</label>
+                </div>
+                <div class="col-sm-3">
+                  <h4 style="float: right;">
+                    <small><em>2020-09-25 </em></small>
+                    <small><em>5.30pm </em></small>
+                  </h4>
+                </div>
+              </div>
+            </li>
+
+            <li class="ui-state-default">
+              <div class="row">
+                <div class="checkbox col-sm-9 " style="text-align: left;">
+                  <label>
+                    <input type="checkbox" value="" />Zombie ditective [series]</label>
+                </div>
+                <div class="col-sm-3">
+                  <h4 style="float: right;">
+                    <small><em>2020-09-26 </em></small>
+                    <small><em>11.53pm </em></small>
+                  </h4>
+                </div>
+              </div>
 
 
 
+            </li>
+          </ul>
+          <div class="todo-footer">
+            <strong><span class="count-todos"></span></strong> Items Left
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="todolist">
+          <h1>Already Done</h1>
+          <ul id="done-items" class="list-unstyled">
+            <li>Some item <button class="remove-item btn btn-default btn-xs pull-right"><span
+                  class="glyphicon glyphicon-remove"></span></button></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-muted " style="background-color:lightblue;">
+    <div class="container text-center">
+      <p>&copy; Kaniz Fatema </p>
+    </div>
+  </footer>
   <!-- JS, Popper.js, and jQuery -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

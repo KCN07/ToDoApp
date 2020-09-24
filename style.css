@@ -20,9 +20,12 @@ html{
     padding: 0;
 }
 
-.card{
+.createbody .card,.editbody .card{
     min-width: 1000px;
     
+}
+input,label{
+    display: block;
 }
   
 
