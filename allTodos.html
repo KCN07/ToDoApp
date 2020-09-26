@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AllTodos</title>
+  <title>All Todos</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
+
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="stltodo.css">
+
 </head>
 
 <body>
@@ -29,15 +31,8 @@
           <li class="nav-item active">
             <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Jobs
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="alljobs.html ">All Jobs</a>
-              <a class="dropdown-item" href="createjobs.html">Create New Job</a>
-            </div>
+          <li class="nav-item ">
+            <a class="nav-link" href="allTodos.html.html">ToDos <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
@@ -45,7 +40,7 @@
               Notes
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-              <a class="dropdown-item" href="allnotes.html ">All Notes</a>
+              <a class="dropdown-item" href="allnotes.html ">My Notes</a>
               <a class="dropdown-item" href="createnote.html">Create New Note</a>
             </div>
           </li>
@@ -60,60 +55,85 @@
 
   </div>
   <header class="jumbotron  container-fluid " style="background-color: gray;">
-    <h1 align="center" style="color: cyan; ">All Todos</h1>
+    <h1 align="center" style="color: cyan; ">My Todos</h1>
   </header>
   <div class="container pb-5">
     <div class="row">
       <div class="col-md-6">
         <div class="todolist not-done">
           <h1>Todos</h1>
+          <div>
+            <button class="btn btn-success btn-sm mb-3" onclick="myFunction()">Add ToDo
+            </button>
+
+            <script>
+              function myFunction() {
+                var txt;
+                var person = prompt("Add ToDo");
+              }
+            </script>
+          </div>
 
           <ul id="sortable" class="list-unstyled">
             <li class="ui-state-default">
-              <div class="row">
-                <div class="checkbox col-sm-9 " style="text-align: left;">
-                  <label>
-                    <input type="checkbox" value="" />Swe Class</label>
-                </div>
-                <div class="col-sm-3">
-                  <h4 style="float: right;">
-                    <small><em>2020-09-25 </em></small>
-                    <small><em>1.00pm </em></small>
-                  </h4>
-                </div>
+
+              <div class="checkbox col-sm-12 " style="text-align: left;">
+                <label>
+                  <input type="checkbox" value="" />Swe Class</label>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                    class="far fa-trash-alt"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+
+              </div>
+              <div class="col-sm-3">
+                <h4 class="ml-2">
+                  <small><em>2020-09-25 </em></small>
+                  <small><em>1.00pm </em></small>
+                </h4>
+              </div>
+
+            </li>
+
+            <li class="ui-state-default">
+
+              <div class="checkbox col-sm-12 ">
+                <label>
+                  <input type="checkbox" value="" />Call Golapi</label>
+
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                    class="far fa-trash-alt"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+              </div>
+              <div class="col-sm-3">
+                <h4 class="ml-2">
+                  <small><em>2020-09-25 </em></small>
+                  <small><em>5.30pm </em></small>
+                </h4>
               </div>
             </li>
 
             <li class="ui-state-default">
-              <div class="row">
-                <div class="checkbox col-sm-9 " style="text-align: left;">
-                  <label>
-                    <input type="checkbox" value="" />Call Golapi</label>
-                </div>
-                <div class="col-sm-3">
-                  <h4 style="float: right;">
-                    <small><em>2020-09-25 </em></small>
-                    <small><em>5.30pm </em></small>
-                  </h4>
-                </div>
+
+              <div class="checkbox col-sm-12 " style="text-align: left;">
+                <label>
+                  <input type="checkbox" value="" style=" position: relative;" />Zombie ditective [series] </label>
+
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                    class="far fa-trash-alt"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
               </div>
-            </li>
-
-            <li class="ui-state-default">
-              <div class="row">
-                <div class="checkbox col-sm-9 " style="text-align: left;">
-                  <label>
-                    <input type="checkbox" value="" />Zombie ditective [series]</label>
-                </div>
-                <div class="col-sm-3">
-                  <h4 style="float: right;">
-                    <small><em>2020-09-26 </em></small>
-                    <small><em>11.53pm </em></small>
-                  </h4>
-                </div>
+              <div class="col-sm-3">
+                <h4 class="ml-2">
+                  <small><em>2020-09-26 </em></small>
+                  <small><em>11.53pm </em></small>
+                </h4>
               </div>
-
-
 
             </li>
           </ul>
@@ -126,8 +146,10 @@
         <div class="todolist">
           <h1>Already Done</h1>
           <ul id="done-items" class="list-unstyled">
-            <li>Some item <button class="remove-item btn btn-default btn-xs pull-right"><span
-                  class="glyphicon glyphicon-remove"></span></button></li>
+
+            <li><input type="checkbox" value="" checked style="float: left; margin-right: 10px;" />Some item <button
+                class="remove-item btn btn-default btn-xs " style="float: right;"><i class="far fa-times-circle"></i>
+              </button></li>
 
           </ul>
         </div>
@@ -151,6 +173,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
