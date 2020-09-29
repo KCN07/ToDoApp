@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create Note</title>
+  <title>My TODOapp</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
@@ -14,11 +14,10 @@
 
 </head>
 
-<body class="createbody bg-transparent">
-
+<body>
   <div class="container-fluid p-0">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5 ">
       <a class="navbar-brand" href="home.html">My ToDolist</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +43,7 @@
               <a class="dropdown-item" href="createSchedule.html">Create New Schedule</a>
             </div>
           </li>
-          
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -64,86 +63,15 @@
       </div>
     </nav>
 
-  </div>
-
-  <header class="jumbotron  container-fluid " style="background-color: gray;">
-    <h1 align="center" style="color: cyan;">Create New Note</h1>
-  </header>
-  <div class="container mt-5 mb-5">
-
-
-    <div class="row ">
-      <div class="col-lg-6 ">
-        <div class="card ">
-
-          <article class="card-body">
-            <form>
-
-              <div class=" form-group">
-
-                <label for="id_title">Title:</label>
-                <input type="text" name="title" maxlength="50" required="" id="id_title"
-                  style="min-width: 515px; border: 1px solid #d4d4d4; background-color: #f7f7f7;">
-              </div>
-
-              <div class="form-group">
-
-                <label for="id_pub_date">Created on:</label>
-                <input type="date" id="date" style="border: 1px solid #d4d4d4; background-color: #f7f7f7;" value="">
-
-
-                <script>
-                  var dt = new Date();
-                  dtm = dt.getMonth() + 1;
-                  dtd = dt.getDate();
-                  if (dtm >= 1 && dtm <= 9) {
-                    dtm = '0' + dtm;
-                  }
-
-                  if (dtd >= 1 && dtd <= 9) {
-                    dtd = '0' + dtd;
-                  }
-
-                  var date = dt.getFullYear() + '-' + dtm + '-' + dtd;
-
-                  document.getElementById("date").value = `${date}`;
-                </script>
-
-              </div>
-              <div class="form-group">
-                <label for="id_body">Body:</label>
-                <textarea name="body" cols="70" rows="5" required="" id="id_body"
-                  style="border: 1px solid #d4d4d4; background-color: #f7f7f7;"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="id_image">Cover Image:</label>
-                <input type="file" name="image" accept="image/*" id="id_image">
-              </div>
-
-              <input type="submit" class="btn btn-primary btn-sm mb-3 mx-1" value="Save">
-
-            </form>
-          </article>
-
-        </div>
-      </div>
-
-    </div>
-
+    <header class="jumbotron  container-fluid " style="background-color: gray;">
+        <h1 align="center" style="color: cyan; ">My Schedules</h1>
+      </header>
 
   </div>
 
 
 
-
-
-  <footer class="text-muted " style="background-color:lightblue;">
-    <div class="container text-center">
-      <p>&copy; Kaniz Fatema </p>
-    </div>
-  </footer>
-
-
+  <!-- JS, Popper.js, and jQuery -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -154,7 +82,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>

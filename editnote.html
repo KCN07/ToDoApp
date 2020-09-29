@@ -33,6 +33,18 @@
           <li class="nav-item ">
             <a class="nav-link" href="allTodos.html">ToDos <span class="sr-only">(current)</span></a>
           </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Schedules
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="allSchedules.html ">My Schedules</a>
+              <a class="dropdown-item" href="createSchedule.html">Create New Note</a>
+            </div>
+          </li>
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -98,6 +110,32 @@
                 </script>
 
               </div>
+
+              <div class="form-group">
+
+                <label for="id_pub_date">Last Edited:</label>
+                <input type="date" id="date1" style="border: 1px solid #d4d4d4; background-color: #f7f7f7;" value="">
+
+
+                <script>
+                  var dt = new Date();
+                  dtm = dt.getMonth() + 1;
+                  dtd = dt.getDate();
+                  if (dtm >= 1 && dtm <= 9) {
+                    dtm = '0' + dtm;
+                  }
+
+                  if (dtd >= 1 && dtd <= 9) {
+                    dtd = '0' + dtd;
+                  }
+
+                  var date = dt.getFullYear() + '-' + dtm + '-' + dtd;
+
+                  document.getElementById("date1").value = `${date}`;
+                </script>
+
+              </div> 
+
               <div class="form-group">
                 <label for="id_body">Body:</label>
                 <textarea name="body" cols="70" rows="5" required="" id="id_body"
@@ -108,8 +146,9 @@
                 <input type="file" name="image" accept="image/*" id="id_image">
               </div>
 
-              <input type="submit" class="btn btn-success mb-3 ml-1" value="Save">
-              <input type="submit" class="btn btn-danger mb-3" data-toggle="modal" data-target="#myModal"
+              <input type="submit" class="btn btn-success btn-sm mb-3 ml-1" value="Save">
+              <a href="allnotes.html" class="btn btn-primary btn-sm mb-3 ml-1" role="button" aria-pressed="true">Cancel</a>
+              <input type="submit" class="btn btn-danger btn-sm mb-3" data-toggle="modal" data-target="#myModal"
                 value="Delete">
 
               <div class="modal fade" id="myModal" role="dialog">

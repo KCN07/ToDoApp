@@ -85,3 +85,8 @@ small{
     line-height: 1;
     color: #777;
 }
+
+input {
+    display: inline-block;
+   
+}
