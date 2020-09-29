@@ -96,7 +96,7 @@
               <div class="form-group">
 
                 <label for="id_pub_date">Starts on:</label>
-                <input type="date" id="date" style="border: 1px solid #d4d4d4; background-color: #f7f7f7;" value="">
+                <input type="date" id="date" style="border: 1px solid #d4d4d4; background-color: #f7f7f7;" value="" required>
 
 
                 <script>
@@ -115,13 +115,40 @@
 
                   document.getElementById("date").value = `${date}`;
                 </script>
-                <input type="time" id="appt" name="appt" >
+                <input type="time" id="appt" name="appt" required>
               </div>
               
               <div class="form-group">
-                <label for="id_image">Cover Image:</label>
-                <input type="file" name="image" accept="image/*" id="id_image">
+
+                <label for="id_pub_date">Ends on:</label>
+                <input type="date" id="date1" style="border: 1px solid #d4d4d4; background-color: #f7f7f7;" value="">
+
+
+                <script>
+                  var dt = new Date();
+                  dtm = dt.getMonth() + 1;
+                  dtd = dt.getDate();
+                  if (dtm >= 1 && dtm <= 9) {
+                    dtm = '0' + dtm;
+                  }
+
+                  if (dtd >= 1 && dtd <= 9) {
+                    dtd = '0' + dtd;
+                  }
+
+                  var date = dt.getFullYear() + '-' + dtm + '-' + dtd;
+
+                  document.getElementById("date1").value = `${date}`;
+                </script>
+                <input type="time" id="appt1" name="appt1" >
               </div>
+
+              <div class="form-group">
+
+                <label for="id_pub_date">Reminder:</label>
+                <input type="time" id="appt2" name="appt2" required>
+                </div>
+              
 
               <input type="submit" class="btn btn-primary btn-sm mb-3 mx-1" value="Save">
 
