@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My TODOapp</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stlschedule.css">
 
 
 </head>
 
-<body>
+<body class="bg-transparent">
   <div class="container-fluid p-0">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5 ">
@@ -64,12 +66,266 @@
     </nav>
 
     <header class="jumbotron  container-fluid " style="background-color: gray;">
-        <h1 align="center" style="color: cyan; ">My Schedules</h1>
-      </header>
+      <h1 align="center" style="color: cyan; ">My Schedules</h1>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="schedule-warp">
+            <div class="day-one"> September 29 (Tuesday)</div>
+            <div class="schedule-card">
+              <div class="insidebox ">
+
+                <span class="schedule-tag">8:00 AM</span>
+                <span class="schedule-start">Swe Class</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">8:30 AM</span>
+                <span class="schedule-start">Commit in github</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">9:00 AM</span>
+                <span class="schedule-start">take medicine</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">1:00 PM</span>
+                <span class="schedule-start"> A series to watch</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="schedule-warp">
+            <div class="day-one"> September 30 (Wednesday)</div>
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">8:00 AM</span>
+                <span class="schedule-start">An Event in Varsity</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">8:30 AM</span>
+                <span class="schedule-start">Meetup with Friend</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">1:00 PM</span>
+                <span class="schedule-start">Book Shopping</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">5:00 PM</span>
+                <span class="schedule-start"> Project Presentations</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">6:00 PM</span>
+                <span class="schedule-start">Go home and rest!</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="schedule-warp">
+            <div class="day-one"> September 29 (Tuesday)</div>
+            <div class="schedule-card">
+              <div class="insidebox ">
+
+                <span class="schedule-tag">8:00 AM</span>
+                <span class="schedule-start">Swe Class</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">8:30 AM</span>
+                <span class="schedule-start">Commit in github</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">9:00 AM</span>
+                <span class="schedule-start">take medicine</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">1:00 PM</span>
+                <span class="schedule-start"> A series to watch</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="schedule-warp">
+            <div class="day-one"> September 30 (Wednesday)</div>
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">8:00 AM</span>
+                <span class="schedule-start">An Event in Varsity</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">8:30 AM</span>
+                <span class="schedule-start">Meetup with Friend</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">1:00 PM</span>
+                <span class="schedule-start">Book Shopping</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">5:00 PM</span>
+                <span class="schedule-start"> Project Presentations</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              </div>
+            </div>
+
+
+            <div class="schedule-card">
+              <div class="insidebox">
+                <span class="schedule-tag">6:00 PM</span>
+                <span class="schedule-start">Go home and rest!</span>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i class="fas fa-edit"></i>
+                </button>
+                <button class="remove-item btn btn-default btn-xs " style="float: right;"><i
+                  class="far fa-trash-alt"></i>
+              </button>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 
-
+  <footer class="text-muted " style="background-color:lightblue;">
+    <div class="container text-center">
+      <p>&copy; Kaniz Fatema </p>
+    </div>
+  </footer>
 
   <!-- JS, Popper.js, and jQuery -->
 
